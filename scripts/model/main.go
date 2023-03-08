@@ -17,7 +17,7 @@ func main() {
 	// 生成实例
 	g := gen.NewGenerator(gen.Config{
 		OutPath:      "../../source/server/logic/orm/dal",
-		ModelPkgPath: "../../source/server/logic/orm/model",
+		ModelPkgPath: "./model",
 		Mode:         gen.WithDefaultQuery | gen.WithoutContext,
 	})
 	// 设置目标 db
